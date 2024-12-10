@@ -59,7 +59,7 @@ class Settings(BaseSettings):
         description="Number of messages to collect from each channel"
     )
     COLLECTION_INTERVAL: int = Field(
-        default=1,
+        default=60,
         ge=1,
         description="Collection interval in minutes"
     )
